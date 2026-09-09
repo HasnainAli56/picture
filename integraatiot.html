@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integraatiot — Pictue</title>
+<meta name="description" content="Yhdistä Pictue Infrakitiin, Trimbleen, M-Filesiin, SharePointiin, OneDriveen, Teamsiin, Fieldsightiin, Optopro Solutionsiin, GroundHawkiin, Paikannin.comiin ja Entra ID:hen.">
+<meta property="og:title" content="Integraatiot — Pictue">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Siirry sisältöön</a>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand" aria-label="Pictue etusivulle"><img src="assets/Pictue-Logo-Light.png" alt="Pictue"></a>
+    <nav class="nav-links" aria-label="Päänavigaatio">
+      <a href="ominaisuudet.html">Ominaisuudet</a>
+      <a href="integraatiot.html" class="active">Integraatiot</a>
+      <a href="hinnasto.html">Hinnasto</a>
+      <a href="blogi.html">Blogi</a>
+      <a href="yhteys.html">Yhteys</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-current" aria-haspopup="true">Suomi <span class="chev">▾</span></button>
+        <div class="lang-menu">
+          <a href="integraatiot.html">Suomi</a>
+          <a href="https://pictue.com/en-gb/integrations">English – United Kingdom</a>
+          <a href="https://pictue.com/sv-se/integrationer">Svenska – Sverige</a>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <a class="login" href="https://web.app.pictue.com">Kirjaudu sisään</a>
+        <a class="btn-nav-outline" style="padding:9px 16px; font-size:13.5px; border-radius: var(--radius-s); font-weight:600;" href="yhteys.html">Ota yhteyttä</a>
+        <a class="btn-nav" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+      </div>
+      <button class="burger" aria-label="Avaa valikko" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="ominaisuudet.html">Ominaisuudet</a>
+    <a href="integraatiot.html">Integraatiot</a>
+    <a href="hinnasto.html">Hinnasto</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="yhteys.html">Yhteys</a>
+    <div class="mobile-ctas">
+      <a class="btn btn-gold" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+      <a class="btn btn-outline-light" href="yhteys.html">Ota yhteyttä</a>
+      <a class="btn btn-outline-light" href="https://web.app.pictue.com">Kirjaudu sisään</a>
+    </div>
+    <div class="mobile-langs">
+      <a href="integraatiot.html">FI</a>
+      <a href="https://pictue.com/en-gb/integrations">EN</a>
+      <a href="https://pictue.com/sv-se/integrationer">SV</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO / HUB -->
+  <section class="hero">
+    <div class="container" style="padding-top:10px;">
+      <div class="reveal in" style="max-width:720px;">
+        <div class="eyebrow">AUTOMATISOI ARKISTOINTI</div>
+        <h1 class="display" style="margin-top:20px; font-size: clamp(2.3rem, 4.6vw, 3.6rem);">Integraatiot</h1>
+        <p class="lede" style="color: rgba(255,255,255,.78); margin-top:20px;">Integraatiot ovat vahva osa filosofiaamme. Tahdomme, että Pictue on ja pysyy maailman helpoimpana valokuvadokumentointityökaluna — siksi teemme yhteistyötä lukuisten toimijoiden kanssa, joiden ratkaisut ovat laajempia. Yhteistyöllä mahdollistamme laajan ominaisuuksien kirjon ilman helppokäyttöisyydestä tinkimistä.</p>
+        <div class="hero-ctas" style="margin-top:32px;">
+          <a class="btn btn-gold" href="yhteys.html">Ota yhteyttä</a>
+          <a class="btn btn-outline-light" href="#integraatiot-lista">Selaa integraatioita</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="eco-illustration reveal-zoom in">
+      <div class="eco-node">PICTUE</div>
+      <div class="eco-line"></div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Infrakit</span><span>Trimble</span><span>M-Files</span><span>SharePoint</span><span>OneDrive</span><span>Teams</span><span>Fieldsight</span><span>Optopro</span><span>GroundHawk</span><span>Paikannin.com</span><span>Entra ID</span>
+          <span>Infrakit</span><span>Trimble</span><span>M-Files</span><span>SharePoint</span><span>OneDrive</span><span>Teams</span><span>Fieldsight</span><span>Optopro</span><span>GroundHawk</span><span>Paikannin.com</span><span>Entra ID</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATIONS GRID -->
+  <section class="section-pad" id="integraatiot-lista">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">EKOSYSTEEMI</div>
+          <h2 class="section-title" style="margin-top:16px;">Yhdistä omat järjestelmäsi Pictueen</h2>
+          <p class="lede" style="margin-top:14px;">Pictuen saat integroitua moneen erilaiseen järjestelmään. Teemme myös räätälöityjä integraatioita asiakkaidemme omiin järjestelmiin — integraatioiden avulla osapuolet saavat tietoa Pictuesta muihin järjestelmiin tai toisinpäin.</p>
+        </div>
+      </div>
+
+      <div class="reel-wrap reveal">
+        <button class="reel-nav prev" aria-label="Edellinen" data-reel-prev>‹</button>
+        <div class="reel-track" id="integration-reel">
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hubfs/Infrakit.svg" alt="Infrakit"></div>
+                <h4>Infrakit</h4>
+                <p>Rajapinnan avulla Pictuessa otetut kuvat infrahankkeiden kenttätyöstä ovat saatavilla Infrakitin kansioissa samoilla hankkeilla.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Infrakit</h4>
+                <p>Nyt myös kuvien automatisoitu nimeäminen saatavilla — kuvat linkittyvät suoraan oikeille hankkeille ilman manuaalista työtä.</p>
+                <span class="flip-hint">← Takaisin</span>
+                <a href="https://pictue.com/fi/pictue-infrakit">Lue lisää integraatiosta →</a>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Trimble%202-1.jpg?width=160&height=95&name=Trimble%202-1.jpg" alt="Trimble"></div>
+                <h4>Trimble</h4>
+                <p>Trimblen NIS- ja UTG-integraatioiden avulla Pictuella otetut kuvat linkittyvät oikeille hankkeille myös näissä järjestelmissä.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Trimble</h4>
+                <p>Tällä edistetään tiedon saatavuutta ja yhteistyön sujuvuutta koko projektin elinkaaren ajan.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/mflies%206.jpg?width=100&height=100&name=mflies%206.jpg" alt="M-Files"></div>
+                <h4>M-Files</h4>
+                <p>M-Files-integraatio mahdollistaa sen, että kaikki Pictuessa otetut kuvat löytyvät myös M-Filesista.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">M-Files</h4>
+                <p>Tällä mahdollistetaan saumaton ylläpitoaineiston keruu ilman turhia välivaiheita tai manuaalista siirtoa.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-300x60.png?width=600&height=120&name=Pictue-Integraatiot-Logot-300x60.png" alt="Microsoft SharePoint"></div>
+                <h4>Microsoft SharePoint</h4>
+                <p>Yhdistä Pictue-organisaatiosi SharePointiin ja synkronoi kuvat suoraan kansiorakenteeseen.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Microsoft SharePoint</h4>
+                <p>Ottamasi kuvat siirtyvät automaattisesti ja reaaliajassa oikeaan kansiorakenteeseen — ilman manuaalista lataamista.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-OneDri.png?width=600&height=120&name=Pictue-Integraatiot-Logot-OneDri.png" alt="OneDrive"></div>
+                <h4>OneDrive</h4>
+                <p>Yhdistämällä Pictue OneDriveen saat synkronoitua kuvat automaattisesti kansioituna.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">OneDrive</h4>
+                <p>Asianomaisten nähtävillä reaaliajassa, aina ajan tasalla ilman erillistä tallennustyötä.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-Teams.png?width=300&height=60&name=Pictue-Integraatiot-Logot-Teams.png" alt="Microsoft Teams"></div>
+                <h4>Microsoft Teams</h4>
+                <p>Yhdistä Pictue-organisaatiosi Teamsiin ja vie kuvat automaattisesti kaikkien saataville.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Microsoft Teams</h4>
+                <p>Kansioituna, reaaliajassa — koko tiimi näkee samat kuvat ilman erillistä jakamista.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Fieldsight%20Infratech%20logo.png?width=250&height=146&name=Fieldsight%20Infratech%20logo.png" alt="Fieldsight"></div>
+                <h4>Fieldsight</h4>
+                <p>Fieldsightin tarkkuus-GPS-kuvat ovat saatavilla myös Pictuessa.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Fieldsight</h4>
+                <p>Pääset Pictuen kartalta suoraan Fieldsight-järjestelmään — kaiken kuvatiedon tarkastelu yhdessä paikassa.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-Optopr.png?width=300&height=60&name=Pictue-Integraatiot-Logot-Optopr.png" alt="Optopro Solutions AB"></div>
+                <h4>Optopro Solutions AB</h4>
+                <p>Ottamasi valokuvat siirtyvät reaaliaikaisesti oikeisiin kohteisiin ja projekteille.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Optopro Solutions AB</h4>
+                <p>Myös Optopro-käyttäjät saavat kirkkaan tilannekuvan suoraan omasta järjestelmästään.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-300x60%20(2).png?width=300&height=60&name=Pictue-Integraatiot-Logot-300x60%20(2).png" alt="GroundHawk"></div>
+                <h4>GroundHawk</h4>
+                <p>Yhdistä GroundHawk-tilisi ja näet kuvat sekä työmaat samalla kartalla.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">GroundHawk</h4>
+                <p>Tuo GroundHawkin tarkkuus-GPS-kuvat näkyviin Pictuessa yhdellä silmäyksellä.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-300x60%20(1).png?width=300&height=60&name=Pictue-Integraatiot-Logot-300x60%20(1).png" alt="Paikannin.com"></div>
+                <h4>Paikannin.com</h4>
+                <p>Yhdistä Paikannin.com-tilisi ja hae ajoneuvolistaukset suoraan Pictueen.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Paikannin.com</h4>
+                <p>Rajapinta lähettää kuvat automaattisesti eteenpäin ilman erillistä käsittelyä.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front">
+                <div class="integration-logo"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Integraatiot-Logot-Azure.png?width=300&height=60&name=Pictue-Integraatiot-Logot-Azure.png" alt="Entra ID / Azure AD"></div>
+                <h4>Entra ID / Azure AD</h4>
+                <p>Yhdistä Pictue-organisaatiosi Microsoft Entra ID:hen automaattista kirjautumista varten.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back">
+                <h4 style="color:#fff;">Entra ID / Azure AD (SSO)</h4>
+                <p>Automatisoi kirjautuminen ja rekisteröityminen koko organisaatiolle turvallisesti.</p>
+                <span class="flip-hint">← Takaisin</span>
+              </div>
+            </div>
+          </div></div>
+
+          <div class="reel-card"><div class="flip-card" data-flip>
+            <div class="flip-card-inner">
+              <div class="flip-face flip-front" style="background:var(--navy-950); border-color:var(--navy-950); color:#fff;">
+                <div class="integration-logo" style="font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--gold);">+</div>
+                <h4 style="color:#fff;">Joku muu ohjelmisto?</h4>
+                <p style="color: rgba(255,255,255,.72);">Etsimme jatkuvasti uusia kumppaneita. Jos ohjelmistostasi olisi hyötyä — olethan yhteyksissä.</p>
+                <span class="flip-hint">Käännä kortti ↻</span>
+              </div>
+              <div class="flip-face flip-back" style="background:var(--gold); color:var(--navy-950); border-color:var(--gold);">
+                <h4 style="color:var(--navy-950);">Ehdota integraatiota</h4>
+                <p style="color:var(--navy-950);">Kerromme mielellämme miten oma integraationne voitaisiin toteuttaa.</p>
+                <a href="yhteys.html" style="color:var(--navy-950);">Ota yhteys →</a>
+              </div>
+            </div>
+          </div></div>
+
+        </div>
+        <button class="reel-nav next" aria-label="Seuraava" data-reel-next>›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW SUMMARY -->
+  <section class="on-mist section-pad-sm">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap:56px; align-items:center;">
+      <div class="reveal-left">
+        <img class="img-fade" src="https://pictue.com/hs-fs/hubfs/Pictue-Kaupungit-ja-Kunnat.png?width=906&height=510&name=Pictue-Kaupungit-ja-Kunnat.png" alt="Pictuen integraatiot tehostavat työtä" style="border-radius: var(--radius-l); border:1px solid var(--line); width:100%;">
+      </div>
+      <div class="reveal-right">
+        <div class="eyebrow">TEE TYÖSTÄSI SUJUVAMPAA</div>
+        <h2 class="section-title" style="margin-top:16px;">Integraatiot lyhyesti</h2>
+        <p class="lede" style="margin-top:14px;">Lisää tehokkuutta automaatioilla. Pictueen saat integroitua moneen erilaiseen työnohjaus-, ERP- ja laatujärjestelmään yhdellä napin painalluksella. Teemme myös räätälöityjä integraatioita asiakkaidemme omiin järjestelmiin.</p>
+        <ul class="summary-list" style="margin-top:26px;">
+          <li><span class="check">✓</span>Integroi Pictue toiseen järjestelmään</li>
+          <li><span class="check">✓</span>Vastaanota projektit, käyttäjät, jakokaapit, ajoneuvot, kuvat tai mitä vain tietoa toisesta järjestelmästä</li>
+          <li><span class="check">✓</span>Ota Pictuella kuvat ja saa ne valmiiksi arkistoituna metatietoineen myös muihin järjestelmiin kuvanottohetkestä</li>
+        </ul>
+        <a class="btn btn-primary" style="margin-top:30px;" href="yhteys.html">Ehdota integraatiota</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Kiinnostuitko? Ota yhteyttä ja kysy lisää.</h2>
+        <div class="cta-actions">
+          <a class="btn btn-gold" href="yhteys.html">Ota yhteyttä</a>
+          <a class="btn btn-outline-light" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <img src="assets/Pictue-Logo-Light.png" alt="Pictue">
+      <p>Luotettavat kuvatodisteet talteen reaaliajassa. Markkinoiden helpoin ratkaisu mobiili-kuvadokumentointiin.</p>
+      <img class="gdpr-badge" src="https://pictue.com/hs-fs/hubfs/Pictue-GDPR-Compliant.png" alt="GDPR Compliant">
+      <div class="social-row">
+        <a href="https://www.facebook.com/pictueofficial" aria-label="Facebook">f</a>
+        <a href="https://x.com/Pictue_official" aria-label="X">X</a>
+        <a href="https://www.linkedin.com/company/83029301" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/pictue_official" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Navigointi</h5>
+      <a href="ominaisuudet.html">Ominaisuudet</a>
+      <a href="integraatiot.html">Integraatiot</a>
+      <a href="hinnasto.html">Hinnasto</a>
+      <a href="blogi.html">Blogi</a>
+      <a href="yhteys.html">Yhteys</a>
+    </div>
+    <div class="footer-col">
+      <h5>Yhteys</h5>
+      <a href="mailto:sales@pictue.com">sales@pictue.com</a>
+      <a href="mailto:support@pictue.com">support@pictue.com</a>
+      <p>Maria01<br>Lapinlahdenkatu 16<br>00180 Helsinki</p>
+    </div>
+    <div class="footer-col">
+      <h5>Lataa sovellus</h5>
+      <p>Lataa ilmaiseksi App Storesta tai Play Storesta.</p>
+      <div class="app-badges">
+        <a href="https://apps.apple.com/fi/app/pictue/id1658549535?platform=iphone"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Download-on-the-App-Store.png?width=300&height=92&name=Pictue-Download-on-the-App-Store.png" alt="App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.pictue.pictue"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Download-on-the-Play-Stor.png?width=300&height=92&name=Pictue-Download-on-the-Play-Stor.png" alt="Google Play"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>Copyright 2026 © Pictue Oy</span>
+    <div>
+      <a href="#">Avoimet työpaikat</a>
+      <a href="https://pictue.com/privacy-policy/">Tietosuojaseloste</a>
+      <a href="#">Palveluehdot</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

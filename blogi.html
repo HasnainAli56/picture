@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pictue Blog</title>
+<meta name="description" content="Pictue-blogi: oppaita ja uutisia kuvadokumentoinnista, integraatioista ja rakennus- ja infra-alan digitalisaatiosta.">
+<meta property="og:title" content="Pictue Blog">
+<meta property="og:type" content="blog">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Siirry sisältöön</a>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand" aria-label="Pictue etusivulle"><img src="assets/Pictue-Logo-Light.png" alt="Pictue"></a>
+    <nav class="nav-links" aria-label="Päänavigaatio">
+      <a href="ominaisuudet.html">Ominaisuudet</a>
+      <a href="integraatiot.html">Integraatiot</a>
+      <a href="hinnasto.html">Hinnasto</a>
+      <a href="blogi.html" class="active">Blogi</a>
+      <a href="yhteys.html">Yhteys</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-current" aria-haspopup="true">Suomi <span class="chev">▾</span></button>
+        <div class="lang-menu">
+          <a href="blogi.html">Suomi</a>
+          <a href="https://pictue.com/pictue-blog">English</a>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <a class="login" href="https://web.app.pictue.com">Kirjaudu sisään</a>
+        <a class="btn-nav-outline" style="padding:9px 16px; font-size:13.5px; border-radius: var(--radius-s); font-weight:600;" href="yhteys.html">Ota yhteyttä</a>
+        <a class="btn-nav" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+      </div>
+      <button class="burger" aria-label="Avaa valikko" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="ominaisuudet.html">Ominaisuudet</a>
+    <a href="integraatiot.html">Integraatiot</a>
+    <a href="hinnasto.html">Hinnasto</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="yhteys.html">Yhteys</a>
+    <div class="mobile-ctas">
+      <a class="btn btn-gold" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+      <a class="btn btn-outline-light" href="yhteys.html">Ota yhteyttä</a>
+      <a class="btn btn-outline-light" href="https://web.app.pictue.com">Kirjaudu sisään</a>
+    </div>
+    <div class="mobile-langs">
+      <a href="blogi.html">FI</a>
+      <a href="https://pictue.com/pictue-blog">EN</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:56px;">
+    <div class="container" style="padding-top:10px;">
+      <div class="reveal in" style="max-width:680px;">
+        <div class="eyebrow">PICTUE BLOG</div>
+        <h1 class="display" style="margin-top:20px; font-size: clamp(2.2rem, 4.3vw, 3.4rem);">Tietoa ja näkemyksiä kuvadokumentoinnista.</h1>
+        <p class="lede" style="color: rgba(255,255,255,.78); margin-top:20px;">Oppaita, asiakastarinoita ja uutisia rakennus-, infra- ja kiinteistöalan visuaalisesta dokumentoinnista.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section-pad">
+    <div class="container">
+
+      <div class="blog-toolbar reveal">
+        <div class="blog-filters">
+          <button data-blog-filter="all" class="active">Kaikki</button>
+          <button data-blog-filter="opas">Opas</button>
+          <button data-blog-filter="tyomaadokumentointi">Työmaadokumentointi</button>
+        </div>
+        <div class="blog-search">
+          <input type="search" id="blog-search" placeholder="Hae artikkeleita…" aria-label="Hae blogista">
+        </div>
+      </div>
+
+      <div class="blog-grid reveal-stagger">
+
+        <a class="blog-card blog-card-featured" data-blog-card data-title="Valokuvadokumentointiohjelmisto ja Microsoft 365" data-tags="yleinen microsoft" href="https://pictue.com/fi/pictue-blog/valokuvadokumentointiohjelmisto-ja-microsoft-365-2026">
+          <div class="thumb img-fade"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Rakennustyomaiden-Valokuv.png?width=2000&height=1125&name=Pictue-Rakennustyomaiden-Valokuv.png" alt="Valokuvadokumentointiohjelmisto ja Microsoft 365"></div>
+          <div class="body">
+            <div class="meta"><span>Teemu</span><span>18.8.2026</span></div>
+            <h3 style="font-size:1.3rem;">Valokuvadokumentointiohjelmisto ja Microsoft 365</h3>
+            <p style="color:var(--ink-soft); font-size:.95rem;">Miten Pictue täydentää Microsoft 365 -ympäristöä ja tuo kuvadokumentoinnin osaksi organisaation olemassa olevia työkaluja.</p>
+            <span class="btn-ghost" style="margin-top:auto; align-self:flex-start;">Lue lisää →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Pilvipohjainen valokuvadokumentointi infrahankkeissa 2026" data-tags="yleinen infra" href="https://pictue.com/fi/pictue-blog/pilvipohjainen-valokuvadokumentointi-infrahankkeissa-2026">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Teemu</span><span>16.8.2026</span></div>
+            <h3>Pilvipohjainen valokuvadokumentointi infrahankkeissa 2026</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Pilvipalvelun kuvadokumentointi kuntien infrastruktuurissa 2026" data-tags="yleinen kunnat" href="https://pictue.com/fi/pictue-blog/pilvipalvelun-kuvadokumentointi-kuntien-infrastruktuurissa-2026">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Teemu</span><span>13.8.2026</span></div>
+            <h3>Pilvipalvelun kuvadokumentointi kuntien infrastruktuurissa 2026</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Reaaliaikainen tiedon näkyvyys: Pictue ja FlyNex yhteistyössä" data-tags="yleinen integraatio" href="https://pictue.com/fi/pictue-blog/reaaliaikainen-tiedon-näkyvyys-picture-ja-flynex-yhteistyössä">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Oskar</span><span>11.8.2026</span></div>
+            <h3>Reaaliaikainen tiedon näkyvyys: Pictue ja FlyNex yhteistyössä</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Pictuen rajapinta tehostaa työmaatoimintojen dokumentointia. Rajapinnat Trimbleen lisäävät hyötyjä." data-tags="tyomaadokumentointi integraatio" href="https://pictue.com/fi/pictue-blog/pictuen-rajapinta-tehostaa-työmaatoimintojen-dokumentointia.-rajapinnat-trimbleen-lisäävät-hyötyjä">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Oskar</span><span>11.8.2026</span></div>
+            <h3>Pictuen rajapinta tehostaa työmaatoimintojen dokumentointia — rajapinnat Trimbleen lisäävät hyötyjä</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Helpon työkalun käytön hyödyt Kuiturakentamisen ekosysteemissä" data-tags="tyomaadokumentointi" href="https://pictue.com/fi/pictue-blog/helpon-työkalun-käytön-hyödyt-kuiturakentamisen-ekosysteemissä">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Oskar</span><span>11.8.2026</span></div>
+            <h3>Helpon työkalun käytön hyödyt kuiturakentamisen ekosysteemissä</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Miten asiakkaat hyötyvät Pictuen ja Infrakitin rajapinnan käytöstä?" data-tags="yleinen integraatio" href="https://pictue.com/fi/pictue-blog/miten-asiakkaat-hyötyvät-pictuen-ja-infrakitin-rajapinnan-käytöstä">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Oskar</span><span>11.8.2026</span></div>
+            <h3>Miten asiakkaat hyötyvät Pictuen ja Infrakitin rajapinnan käytöstä?</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="SharePoint-valokuvadokumentointi kiinteistöhuollossa 2026" data-tags="yleinen microsoft" href="https://pictue.com/fi/pictue-blog/sharepoint-valokuvadokumentointi-kiinteistöhuollossa-2026">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Teemu</span><span>11.8.2026</span></div>
+            <h3>SharePoint-valokuvadokumentointi kiinteistöhuollossa 2026</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Työmaadokumentointi - kattava opas toimivaan dokumentointiin" data-tags="opas tyomaadokumentointi" href="https://pictue.com/fi/pictue-blog/tyomaadokumentointi">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Taneli</span><span>29.7.2026</span></div>
+            <h3>Työmaadokumentointi – kattava opas toimivaan dokumentointiin</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" data-blog-card data-title="Mitä puutteellinen työmaadokumentointi voi maksaa yritykselle?" data-tags="tyomaadokumentointi" href="https://pictue.com/fi/pictue-blog/puutteellisen-tyomaadokumentoinnin-kustannukset">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="meta"><span>Taneli</span><span>25.7.2026</span></div>
+            <h3>Mitä puutteellinen työmaadokumentointi voi maksaa yritykselle?</h3>
+          </div>
+        </a>
+
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:10px; margin-top:52px;">
+        <a href="https://pictue.com/fi/pictue-blog/page/1" class="btn btn-outline" style="padding:10px 18px;">1</a>
+        <a href="https://pictue.com/fi/pictue-blog/page/2" class="btn btn-outline" style="padding:10px 18px;">2</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Näe, miten Pictue toimisi juuri sinun työmaallasi.</h2>
+        <div class="cta-actions">
+          <a class="btn btn-gold" href="https://pictue.com/fi/varaa-esittely">Varaa demo</a>
+          <a class="btn btn-outline-light" href="yhteys.html">Ota yhteyttä</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <img src="assets/Pictue-Logo-Light.png" alt="Pictue">
+      <p>Luotettavat kuvatodisteet talteen reaaliajassa. Markkinoiden helpoin ratkaisu mobiili-kuvadokumentointiin.</p>
+      <img class="gdpr-badge" src="https://pictue.com/hs-fs/hubfs/Pictue-GDPR-Compliant.png" alt="GDPR Compliant">
+      <div class="social-row">
+        <a href="https://www.facebook.com/pictueofficial" aria-label="Facebook">f</a>
+        <a href="https://x.com/Pictue_official" aria-label="X">X</a>
+        <a href="https://www.linkedin.com/company/83029301" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/pictue_official" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Navigointi</h5>
+      <a href="ominaisuudet.html">Ominaisuudet</a>
+      <a href="integraatiot.html">Integraatiot</a>
+      <a href="hinnasto.html">Hinnasto</a>
+      <a href="blogi.html">Blogi</a>
+      <a href="yhteys.html">Yhteys</a>
+    </div>
+    <div class="footer-col">
+      <h5>Yhteys</h5>
+      <a href="mailto:sales@pictue.com">sales@pictue.com</a>
+      <a href="mailto:support@pictue.com">support@pictue.com</a>
+      <p>Maria01<br>Lapinlahdenkatu 16<br>00180 Helsinki</p>
+    </div>
+    <div class="footer-col">
+      <h5>Lataa sovellus</h5>
+      <p>Lataa ilmaiseksi App Storesta tai Play Storesta.</p>
+      <div class="app-badges">
+        <a href="https://apps.apple.com/fi/app/pictue/id1658549535?platform=iphone"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Download-on-the-App-Store.png?width=300&height=92&name=Pictue-Download-on-the-App-Store.png" alt="App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.pictue.pictue"><img src="https://pictue.com/hs-fs/hubfs/Pictue-Download-on-the-Play-Stor.png?width=300&height=92&name=Pictue-Download-on-the-Play-Stor.png" alt="Google Play"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>Copyright 2026 © Pictue Oy</span>
+    <div>
+      <a href="#">Avoimet työpaikat</a>
+      <a href="https://pictue.com/privacy-policy/">Tietosuojaseloste</a>
+      <a href="#">Palveluehdot</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
