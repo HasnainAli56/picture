@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resource Hub — Guides, Security, and Customer Stories | Pictue</title>
+<meta name="description" content="Explore Pictue's Resource Hub: Customer stories, security whitepapers, expert insights, event updates, and best-practice field documentation guides.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- TOP ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  <div class="container announcement-content">
+    <span>Guides, product updates, and expert tips to help your team.</span>
+    <a href="demo.html" class="announcement-link">Book a free demonstration &rarr;</a>
+  </div>
+</div>
+
+<!-- HEADER / NAVIGATION -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand" aria-label="Pictue home"><img src="assets/Pictue-Logo-Light.png" alt="Pictue"></a>
+    <nav class="nav-links" aria-label="Main Navigation">
+      <a href="features.html">Features</a>
+      <a href="integrations.html">Integrations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resource-hub.html" class="active">Resource Hub</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-current" aria-haspopup="true">English <span class="chev">▾</span></button>
+        <div class="lang-menu">
+          <a href="resource-hub.html">English – United Kingdom</a>
+          <a href="etusivu.html">Suomi (Finnish)</a>
+          <a href="https://pictue.com/sv-se/startsida">Svenska – Sverige</a>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <a class="login" href="https://web.app.pictue.com">Log in</a>
+        <a class="btn-nav-outline" href="contact.html">Contact</a>
+        <a class="btn-nav" href="demo.html">Book demo</a>
+      </div>
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="features.html">Features</a>
+    <a href="integrations.html">Integrations</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="resource-hub.html" class="active">Resource Hub</a>
+    <div class="mobile-ctas">
+      <a class="btn btn-gold" href="demo.html">Book demo</a>
+      <a class="btn btn-outline-light" href="contact.html">Contact us</a>
+      <a class="btn btn-outline-light" href="https://web.app.pictue.com">Log in</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO SECTION WITH OPENSPACE GRADIENT MESH -->
+  <section class="hero" style="padding: 70px 0 60px;">
+    <div class="gradient-background gradient-background--fly-c gradient-background--overflowing">
+      <div class="gradient-background__positioner">
+        <img fetchpriority="high" src="https://www.openspace.ai/wp-content/themes/openspace/img/gradient-backgrounds/fly-c.webp" alt="" width="1920" height="1080">
+      </div>
+    </div>
+    <div class="container" style="position:relative; z-index:3; max-width:880px; text-align:center;">
+      <div class="eyebrow" style="margin:0 auto 16px;">KNOWLEDGE BASE</div>
+      <h1 class="display" style="font-size:clamp(2.4rem, 4.2vw, 3.8rem); line-height:1.15;">Pictue Resource Hub</h1>
+      <p class="lede" style="margin:20px auto 0; max-width:700px; color:rgba(255,255,255,0.92);">Guides, product updates, enterprise security frameworks, and expert tips to help your team achieve the highest quality on site.</p>
+    </div>
+  </section>
+
+  <!-- RESOURCE DIRECTORY WITH FILTER TABS -->
+  <section class="section-pad on-mist">
+    <div class="container">
+
+      <!-- Category Filter Pills -->
+      <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-bottom:48px;" class="reveal">
+        <button class="platform-tab-btn active" onclick="filterResources('all', this)">All Resources</button>
+        <button class="platform-tab-btn" onclick="filterResources('stories', this)">Customer Stories</button>
+        <button class="platform-tab-btn" onclick="filterResources('news', this)">News</button>
+        <button class="platform-tab-btn" onclick="filterResources('security', this)">Security</button>
+        <button class="platform-tab-btn" onclick="filterResources('insights', this)">Expert Insights</button>
+        <button class="platform-tab-btn" onclick="filterResources('events', this)">Events</button>
+        <button class="platform-tab-btn" onclick="filterResources('guides', this)">Articles & Guides</button>
+      </div>
+
+      <!-- Resource Grid -->
+      <div class="blog-grid reveal" id="resource-cards-grid">
+
+        <!-- 1. Customer Stories -->
+        <article class="blog-card resource-card" data-category="stories">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hs-fs/hubfs/Pictue-Asennus-Talvikunnossapito.png?width=768&height=512&name=Pictue-Asennus-Talvikunnossapito.png" alt="YH Kodit customer story">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">Customer Story</div>
+            <h3>Shared Photos – Here's How Pictue Streamlines Property Management for YH Kodit</h3>
+            <p>Managing extensive residential portfolios requires reliable visual evidence. Discover how YH Kodit connects property supervisors and maintenance contractors.</p>
+            <a class="btn-ghost" href="demo.html">Read case study &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 2. News -->
+        <article class="blog-card resource-card" data-category="news">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hubfs/Pictue-2.4.11-Kuvastatus.webp" alt="Pictue 300 milestone">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">News & Milestone</div>
+            <h3>Pictue Reaches 300 Companies Using Smarter Photo Documentation</h3>
+            <p>From infrastructure and telecom networks to urban building construction, over 300 organizations across Northern Europe rely on Pictue daily.</p>
+            <a class="btn-ghost" href="demo.html">Read announcement &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 3. Security -->
+        <article class="blog-card resource-card" data-category="security">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hs-fs/hubfs/Pictue-Asiakastarina-Efficient-N.png?width=1920&height=1280&name=Pictue-Asiakastarina-Efficient-N.png" alt="Security in construction documentation">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">Security & Compliance</div>
+            <h3>Keeping Construction Photo Documentation Secure</h3>
+            <p>An in-depth look at enterprise-grade encryption, GDPR compliance, AWS cloud storage redundancy, and Microsoft Entra ID single sign-on security.</p>
+            <a class="btn-ghost" href="demo.html">Download security brief &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 4. Expert Insights -->
+        <article class="blog-card resource-card" data-category="insights">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hs-fs/hubfs/Pictue-Asennus-Lattialammitys-76.png?width=768&height=512&name=Pictue-Asennus-Lattialammitys-76.png" alt="Why visual documentation is essential">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">Expert Insights</div>
+            <h3>Why Visual Documentation Is Becoming Essential in Construction</h3>
+            <p>Modern regulatory compliance and insurance requirements demand timestamped, geotagged proof. Here is how visual standards prevent dispute delays.</p>
+            <a class="btn-ghost" href="demo.html">Read insight &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 5. Events -->
+        <article class="blog-card resource-card" data-category="events">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hs-fs/hubfs/Pictue-Kaupungit-ja-Kunnat-768x5.png?width=768&height=512&name=Pictue-Kaupungit-ja-Kunnat-768x5.png" alt="FinnBuild 2026">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">Events & Exhibitions</div>
+            <h3>Pictue at FinnBuild 2026: Smarter Photo Documentation</h3>
+            <p>Meet our product team, test the new offline AI image search features live, and learn how to implement Pictue across your site crews.</p>
+            <a class="btn-ghost" href="demo.html">Meet us at FinnBuild &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 6. Articles & Guides -->
+        <article class="blog-card resource-card" data-category="guides">
+          <div class="blog-card__media">
+            <img src="https://pictue.com/hs-fs/hubfs/Pictue-Asennus-Kaivuluvat-768x51.png?width=768&height=512&name=Pictue-Asennus-Kaivuluvat-768x51.png" alt="Photo documentation mistakes">
+          </div>
+          <div class="blog-card__content">
+            <div class="cat">Articles & Guides</div>
+            <h3>7 Common Photo Documentation Mistakes on Construction Sites</h3>
+            <p>Avoid losing photos in WhatsApp, chaotic naming conventions, and missing metadata. Actionable best practices for site supervisors.</p>
+            <a class="btn-ghost" href="demo.html">Read guide &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner on-navy">
+    <div class="container cta-banner-inner reveal">
+      <div>
+        <div class="eyebrow" style="color:var(--os-teal); border-color:rgba(135,245,175,0.3); background:rgba(135,245,175,0.1);">STAY INFORMED</div>
+        <h2 style="font-size:clamp(2rem, 3.2vw, 2.9rem); margin-top:16px;">Have a question not covered in our guides?</h2>
+        <p class="lede" style="color:rgba(255,255,255,0.85); margin-top:14px;">Our Helsinki team is always available for product walkthroughs and customized deployment advice.</p>
+        <div class="hero-ctas" style="margin-top:28px;">
+          <a class="btn btn-gold" href="demo.html">Book a consultation</a>
+          <a class="btn btn-outline-light" href="contact.html">Contact support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/Pictue-Logo-Light.png" alt="Pictue" height="32" style="width:auto; margin-bottom:18px;">
+      <p style="color:rgba(255,255,255,0.7); font-size:14px; line-height:1.65; max-width:320px;">The easiest and most efficient solution for mobile field photo documentation. Trusted by over 300 companies.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <a href="features.html">Features</a>
+      <a href="integrations.html">Integrations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resource-hub.html">Resource Hub</a>
+    </div>
+    <div class="footer-col">
+      <h5>Industry Solutions</h5>
+      <a href="features.html#infrastructure">Infrastructure</a>
+      <a href="features.html#building">Building Construction</a>
+      <a href="features.html#property">Property Maintenance</a>
+      <a href="features.html#municipalities">Municipalities</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="mailto:sales@pictue.com">sales@pictue.com</a>
+      <a href="mailto:support@pictue.com">support@pictue.com</a>
+      <a href="tel:+358442353924">+358 44 2353 924</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <div>Copyright 2026 &copy; Pictue Oy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function filterResources(category, btn) {
+  document.querySelectorAll('.platform-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cards = document.querySelectorAll('.resource-card');
+  cards.forEach(c => {
+    if (category === 'all' || c.getAttribute('data-category') === category) {
+      c.style.display = 'flex';
+    } else {
+      c.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
