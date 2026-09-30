@@ -164,21 +164,49 @@
     });
   }
 
-  /* Video player controls */
+  /* Hero Video Player Fast-Start & Controls */
   var heroVideo = document.getElementById('hero-feature-video');
   var videoToggleBtn = document.getElementById('toggle-hero-video');
-  if(heroVideo && videoToggleBtn){
-    videoToggleBtn.addEventListener('click', function(){
-      if(heroVideo.paused){
-        heroVideo.play();
+  if(heroVideo){
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+
+    function playVideoFast() {
+      var p = heroVideo.play();
+      if(p !== undefined) {
+        p.catch(function() {
+          // If browser restricts autoplay, retry on first scroll or click
+          window.addEventListener('scroll', function onFirstScroll() {
+            heroVideo.play().catch(function() {});
+            window.removeEventListener('scroll', onFirstScroll);
+          }, { once: true });
+        });
+      }
+    }
+
+    // Trigger instant playback as soon as DOM and first chunk are ready
+    playVideoFast();
+    heroVideo.addEventListener('loadeddata', playVideoFast);
+    heroVideo.addEventListener('canplay', playVideoFast);
+
+    if(videoToggleBtn){
+      heroVideo.addEventListener('play', function(){
         videoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
         videoToggleBtn.setAttribute('aria-label', 'Pause video');
-      } else {
-        heroVideo.pause();
+      });
+      heroVideo.addEventListener('pause', function(){
         videoToggleBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
         videoToggleBtn.setAttribute('aria-label', 'Play video');
-      }
-    });
+      });
+
+      videoToggleBtn.addEventListener('click', function(){
+        if(heroVideo.paused){
+          heroVideo.play();
+        } else {
+          heroVideo.pause();
+        }
+      });
+    }
   }
 
 
